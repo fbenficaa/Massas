@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    align-content: center;
 }
 
 /* Cabeçalho */
@@ -41,7 +42,8 @@ nav ul li a:hover {
 
 /* Seção hero */
 .hero {
-    background-image: url('./LOGISTICA\ MASSAS-images-5EDITED.jpg');/* Substitua pela URL de uma imagem de massas */
+    background-image: url('./LOGISTICA\ MASSAS-images-5EDITED.jpg');
+    /* Substitua pela URL de uma imagem de massas */
     background-size: cover;
     height: 800px;
     display: flex;
@@ -58,6 +60,7 @@ nav ul li a:hover {
     align-items: center;
     place-items: center;
     height: 50%;
+    font-size: 25px;
 
 }
 
@@ -71,13 +74,14 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 100%;
+    font-size: 25px;
 }
 
 .product img {
     max-width: 100%;
     height: auto;
-    
-   
+
+
 }
 
 /* Rodapé */
@@ -85,33 +89,36 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 0,5px;
+    padding: 0, 5px;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-.logo-massas{
+
+.logo-massas {
 
     width: 600px;
     height: 240px;
     opacity: 100%;
 }
 
-.mapa{
+.mapa {
     color: white;
     text-decoration: none;
     padding: 10px;
     display: block;
 
 }
-.elson{
-height: 60%;
-width: 60%;
-align-items: center;
-display: flex;
-justify-content: center;
-text-align: center;
+
+.elson {
+    height: 60%;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
 /* Estilos padrão (para telas maiores, como desktops) */
 body {
     font-size: 18px;
@@ -126,98 +133,127 @@ body {
         background-color: #e0e0e0;
         display: inline-block;
     }
-    .logo-massas{
 
-        width: 270px;
-        height: 110px;
+    .logo-massas {
+
+        width: 400px;
+        height: 160px;
         opacity: 100%;
 
-}
-nav ul {
-    list-style-type: none;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;}
-    .hero {
-        background-image: url('');/* Substitua pela URL de uma imagem de massas */
-        background-size: cover;
-        height: 0px;
-        text-align: center;
-}
-.elson{
-    width: 650px;
-}
-
-
-/* Para telas menores que 768px (smartphones) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 17px;
-        background-color: #e0e0e0;
-        display: inline-block;
     }
-    .logo-massas{
 
-        width: 270px;
-        height: 110px;
-        opacity: 100%;
-
-}
-nav ul {
-    list-style-type: none;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;}
-    .hero {
-        background-image: url('');/* Substitua pela URL de uma imagem de massas */
-        background-size: cover;
-        height: 0px;
+    .product {
+        display: grid;
+        width: 100%;
+        margin: 1%;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
-}
-.elson{
-    width: 650px;
-}
+        height: 100%;
 
-}
-
-/* Para telas menores que 480px (smartphones menores) */
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 17px;
-        background-color: #e0e0e0;
-        display: inline-block;
     }
-    .logo-massas{
 
-        width: 270px;
-        height: 110px;
-        opacity: 100%;
+    nav ul {
+        list-style-type: none;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+    }
 
-}
-nav ul {
-    list-style-type: none;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;}
     .hero {
-        background-image: url('');/* Substitua pela URL de uma imagem de massas */
+        background-image: url('');
+        /* Substitua pela URL de uma imagem de massas */
         background-size: cover;
         height: 0px;
         text-align: center;
     }
-}
-.elson{
-    width: 650px;
-}
+
+    .elson {
+        width: 670px;
+    }
+
+
+    /* Para telas menores que 768px (smartphones) */
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 17px;
+            background-color: #e0e0e0;
+            display: inline-block;
+        }
+
+        .logo-massas {
+
+            width: 400px;
+            height: 160px;
+            opacity: 100%;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .hero {
+            background-image: url('');
+            /* Substitua pela URL de uma imagem de massas */
+            background-size: cover;
+            height: 0px;
+            text-align: center;
+        }
+
+        .elson {
+            width: 650px;
+        }
+
+    }
+
+    /* Para telas menores que 480px (smartphones menores) */
+    @media screen and (max-width: 480px) {
+        body {
+            font-size: 20px;
+            background-color: #e0e0e0;
+            display: inline-block;
+        }
+
+        .logo-massas {
+
+            width: 400px;
+            height: 160px;
+            opacity: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .hero {
+            background-image: url('');
+            /* Substitua pela URL de uma imagem de massas */
+            background-size: cover;
+            height: 0px;
+            text-align: center;
+        }
+    }
+
+    .elson {
+        width: 650px;
+    }
 
 
 }
